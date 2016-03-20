@@ -71,7 +71,7 @@ function DisparityMap(folder_path, left, right, w, ss)
 			[max_cost_cc, max_cost_cc_idx] = max(cost_cc);
 
 			%The disparity is the distance between the current pixel in right image  and the best match pixel in
-			%the left image (distance, in pixels, is the index of the intensity diff vector)
+			%the left image (distance is the index of the intensity diff vector (in pixels))
 			disparity_map(i-w,j-w) = min_cost_idx;
 			disparity_map_sq(i-w,j-w) = min_cost_sq_idx;
 			disparity_map_cc(i-w,j-w) = max_cost_cc_idx;
@@ -79,7 +79,7 @@ function DisparityMap(folder_path, left, right, w, ss)
 		disp(['Row :', num2str(i)]);
 	end
 
-	%Saving the result for plotting latter
+	%Saving the result for plotting
 	save([folder_path, 'dm_win_', num2str(w), '_ss_', num2str(ss)]);
 
 % 	hold on;
