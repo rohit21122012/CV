@@ -63,7 +63,7 @@ function DisparityMap(folder_path, left, right, w, ss)
 				cost_sq = [cost_sq, sum(sum((left_win - right_win).^2))];
 
 				%normalized cross-correlation criteria
-				cost_cc = [cost_cc, sum(sum(normxcorr2(left_win,right_win)))];
+				cost_cc = [cost_cc, sum(sum(corr2(left_win,right_win)))];
 			end	
 
 			[min_cost, min_cost_idx] = min(cost);
