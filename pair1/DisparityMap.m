@@ -45,7 +45,8 @@
 			cost = [];
 			cost_sq = [];
 			 cost_cc = [];
-			for jr=j:j+w
+			right_dist = min(j+w, w+img_size(2)); 
+			for jr=j:right_dist
 				% left_win = zeros(2*w+1,2*w+1);
 				% right_win = zeros(2*w+1, 2*w+1);
 				
@@ -126,7 +127,8 @@
 			cost = [];
 			cost_sq = [];
 			cost_cc = [];
-			for jr=j:j+w
+			right_dist = min(j+w,w+ img_size(2));
+                        for jr=j:right_dist
 				% left_win = zeros(2*w+1,2*w+1);
 				% right_win = zeros(2*w+1, 2*w+1);
 				
