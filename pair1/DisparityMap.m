@@ -39,13 +39,13 @@
 
 
 	%Outer loop iterates over the row of left image
-	for i=w+1:img_size(1)
+	for i=w+1:w+img_size(1)
 		%This loop iterates over the columns in the ith row of the left image
-		for j=w+1:img_size(2)
+		for j=w+1:w+img_size(2)
 			cost = [];
 			cost_sq = [];
 			 cost_cc = [];
-			for jr=j:img_size(2)
+			for jr=j:j+w
 				% left_win = zeros(2*w+1,2*w+1);
 				% right_win = zeros(2*w+1, 2*w+1);
 				
@@ -103,8 +103,8 @@
 			%The disparity is the distance between the current pixel in l  and the best match pixel in
 			%the right image (distance, in pixels, is the index of the intensity diff vector)
 			disparity_map(i-w,j-w) = min_cost_idx;
-			 disparity_map_sq(i-w,j-w) = min_cost_sq_idx;
-			 disparity_map_cc(i-w,j-w) = min_cost_cc_idx;
+			disparity_map_sq(i-w,j-w) = min_cost_sq_idx;
+			disparity_map_cc(i-w,j-w) = min_cost_cc_idx;
 		end
 		disp([num2str(i),' row']);
 	end
@@ -120,13 +120,13 @@
 
 
 	%Outer loop iterates over the row of left image
-	for i=w+1:img_size(1)
+	for i=w+1:w+img_size(1)
 		%This loop iterates over the columns in the ith row of the left image
-		for j=w+1:img_size(2)
+		for j=w+1:w+img_size(2)
 			cost = [];
 			cost_sq = [];
 			cost_cc = [];
-			for jr=j:img_size(2)
+			for jr=j:j+w
 				% left_win = zeros(2*w+1,2*w+1);
 				% right_win = zeros(2*w+1, 2*w+1);
 				
