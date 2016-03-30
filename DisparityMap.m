@@ -29,7 +29,7 @@ function DisparityMap(folder_path, left, right, w, ss)
 	disparity_map_cc = zeros(size(gray_left,1), size(gray_left,2));
 	
 	% window for the pixel
-	w = 5;	
+	w = 1;	
 
 	img_size = size(gray_left);
 	new_left = zeros(2*w+img_size(1), 2*w+img_size(2));

@@ -16,3 +16,8 @@ for i = 1:200
     end
 end
 im2(:,1:5) = round(255*rand(200,5)); 
+fig = figure('visible', 'off')
+imshow(im1,[])
+saveas(fig,'scene_l.png')
+imshow(im2,[])
+saveas(fig,'scene_r.png')
