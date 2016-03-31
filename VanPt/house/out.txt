@@ -1,0 +1,168 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2014 The MathWorks, Inc.
+                    R2014a (8.3.0.532) 64-bit (glnxa64)
+                             February 11, 2014
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> a1:0 a2:-90 diff:90
+a1:0 a2:87 diff:87
+a1:0 a2:76 diff:76
+a1:0 a2:76 diff:76
+a1:0 a2:-88 diff:88
+a1:0 a2:0 diff:0
+
+xi =
+
+   Empty matrix: 0-by-1
+
+
+yi =
+
+   Empty matrix: 0-by-1
+
+a1:0 a2:81 diff:81
+a1:0 a2:83 diff:83
+a1:-90 a2:87 diff:177
+a1:-90 a2:76 diff:166
+a1:-90 a2:76 diff:166
+a1:-90 a2:-88 diff:2
+
+xi =
+
+   630
+
+
+yi =
+
+   104
+
+a1:-90 a2:0 diff:90
+a1:-90 a2:81 diff:171
+a1:-90 a2:83 diff:173
+a1:87 a2:76 diff:11
+
+xi =
+
+ -102.0309
+
+
+yi =
+
+  101.8351
+
+a1:87 a2:76 diff:11
+
+xi =
+
+  -97.2857
+
+
+yi =
+
+  101.5714
+
+a1:87 a2:-88 diff:175
+a1:87 a2:0 diff:87
+a1:87 a2:81 diff:6
+
+xi =
+
+  844.9551
+
+
+yi =
+
+   49.2247
+
+a1:87 a2:83 diff:4
+
+xi =
+
+  939.0000
+
+
+yi =
+
+   44.0000
+
+a1:76 a2:76 diff:0
+
+xi =
+
+    5.0000
+
+
+yi =
+
+   76.0000
+
+a1:76 a2:-88 diff:164
+a1:76 a2:0 diff:76
+a1:76 a2:81 diff:5
+
+xi =
+
+ -989.5294
+
+
+yi =
+
+  316.0588
+
+a1:76 a2:83 diff:7
+
+xi =
+
+ -646.9494
+
+
+yi =
+
+  233.3671
+
+a1:76 a2:-88 diff:164
+a1:76 a2:0 diff:76
+a1:76 a2:81 diff:5
+
+xi =
+
+ -907.5217
+
+
+yi =
+
+  304.1304
+
+a1:76 a2:83 diff:7
+
+xi =
+
+ -603.9143
+
+
+yi =
+
+  228.2286
+
+a1:-88 a2:0 diff:88
+a1:-88 a2:81 diff:169
+a1:-88 a2:83 diff:171
+a1:0 a2:81 diff:81
+a1:0 a2:83 diff:83
+a1:81 a2:83 diff:2
+
+xi =
+
+  614.4687
+
+
+yi =
+
+   82.7500
+
+>> [Warning: Objects of graph2d.lineseries class exist - not clearing this class or
+any of its superclasses] 

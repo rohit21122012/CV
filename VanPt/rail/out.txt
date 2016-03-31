@@ -1,0 +1,52 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2014 The MathWorks, Inc.
+                    R2014a (8.3.0.532) 64-bit (glnxa64)
+                             February 11, 2014
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> a1:-23 a2:28 diff:51
+
+xi =
+
+   93.5157
+
+
+yi =
+
+  136.3066
+
+a1:-23 a2:88 diff:111
+a1:-23 a2:-2 diff:21
+
+xi =
+
+  179.8608
+
+
+yi =
+
+  342.2066
+
+a1:-23 a2:-90 diff:67
+a1:28 a2:88 diff:60
+a1:28 a2:-2 diff:30
+
+xi =
+
+  173.5187
+
+
+yi =
+
+  -12.9528
+
+a1:28 a2:-90 diff:118
+a1:88 a2:-2 diff:90
+a1:88 a2:-90 diff:178
+a1:-2 a2:-90 diff:88
+>> [Warning: Objects of graph2d.lineseries class exist - not clearing this class or
+any of its superclasses] 
