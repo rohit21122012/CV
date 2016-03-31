@@ -29,7 +29,7 @@ function DisparityMap(folder_path, left, right, w, ss)
 	disparity_map_cc = zeros(size(gray_left,1), size(gray_left,2));
 	
 	% window for the pixel
-	w = 5;	
+	w = 1;	
 
 	img_size = size(gray_left);
 	new_left = zeros(2*w+img_size(1), 2*w+img_size(2));
@@ -63,7 +63,7 @@ function DisparityMap(folder_path, left, right, w, ss)
 				cost_sq(jr-j+1)  = sum(sum((left_win - right_win).^2));
 
 				%normalized cross-correlation criteria
-				cost_cc(jr-j+1)  = sum(sum(normxcorr2(left_win,right_win)));
+				cost_cc(jr-j+1)  = sum(sum(corr(left_win,right_win)));
 			end	
 
 			[min_cost, min_cost_idx] = min(cost);
