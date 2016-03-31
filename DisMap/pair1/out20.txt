@@ -8,77 +8,292 @@
 To get started, type one of these: helpwin, helpdesk, or demo.
 For product information, visit www.mathworks.com.
  
-*** Error in `/usr/local/MATLAB/R2013a/bin/glnxa64/MATLAB': corrupted double-linked list: 0x00007f36dc014d90 ***
-
-------------------------------------------------------------------------
-            Abort signal detected at Thu Mar 31 00:43:05 2016
-------------------------------------------------------------------------
-
-Configuration:
-  Crash Decoding     : Disabled
-  Current Visual     : 0x21 (class 4, depth 24)
-  Default Encoding   : UTF-8
-  GNU C Library      : 2.19 stable
-  MATLAB Architecture: glnxa64
-  MATLAB Root        : /usr/local/MATLAB/R2013a
-  MATLAB Version     : 8.1.0.604 (R2013a)
-  Operating System   : Linux 3.13.0-77-generic #121-Ubuntu SMP Wed Jan 20 10:50:42 UTC 2016 x86_64
-  Processor ID       : x86 Family 6 Model 45 Stepping 7, GenuineIntel
-  Virtual Machine    : Java 1.6.0_17-b04 with Sun Microsystems Inc. Java HotSpot(TM) 64-Bit Server VM mixed mode
-  Window System      : The X.Org Foundation (11501000), display localhost:10.0
-
-Fault Count: 2
-
-
-Abnormal termination:
-Abort signal
-
-Register State (from fault):
-  RAX = 0000000000000000  RBX = 0000000000000071
-  RCX = ffffffffffffffff  RDX = 0000000000000006
-  RSP = 00007f376e2b5fb8  RBP = 00007f376e2b6350
-  RSI = 0000000000000cff  RDI = 0000000000000be0
-
-   R8 = 3039643431306364   R9 = 672f6e69622f6133
-  R10 = 0000000000000008  R11 = 0000000000000202
-  R12 = 00007f376e2b6160  R13 = 0000000000000007
-  R14 = 0000000000000071  R15 = 0000000000000007
-
-  RIP = 00007f377fb99cc9  EFL = 0000000000000202
-
-   CS = 0033   FS = 0000   GS = 0000
-
-Stack Trace (from fault):
-[  0] 0x00007f377fb99cc9                    /lib/x86_64-linux-gnu/libc.so.6+00224457 gsignal+00000057
-[  1] 0x00007f377fb9d0d8                    /lib/x86_64-linux-gnu/libc.so.6+00237784 abort+00000328
-[  2] 0x00007f377fbd6394                    /lib/x86_64-linux-gnu/libc.so.6+00471956
-[  3] 0x00007f377fbe10f7                    /lib/x86_64-linux-gnu/libc.so.6+00516343
-[  4] 0x00007f377fbe27a7                    /lib/x86_64-linux-gnu/libc.so.6+00522151
-[  5] 0x00007f377fb9f280                    /lib/x86_64-linux-gnu/libc.so.6+00246400
-[  6] 0x00007f377fb9f2a5                    /lib/x86_64-linux-gnu/libc.so.6+00246437
-[  7] 0x00007f377214a5f8              /usr/lib/x86_64-linux-gnu/libX11.so.6+00255480 _XIOError+00000088
-[  8] 0x00007f3772147fed              /usr/lib/x86_64-linux-gnu/libX11.so.6+00245741 _XEventsQueued+00000125
-[  9] 0x00007f377213a0db              /usr/lib/x86_64-linux-gnu/libX11.so.6+00188635 XEventsQueued+00000075
-[ 10] 0x00007f377246d727               /usr/lib/x86_64-linux-gnu/libXt.so.6+00182055 _XtWaitForSomething+00002215
-[ 11] 0x00007f377246e5d7               /usr/lib/x86_64-linux-gnu/libXt.so.6+00185815 XtAppNextEvent+00000231
-[ 12] 0x00007f377594eed1   /usr/local/MATLAB/R2013a/bin/glnxa64/libmwuix.so+00564945
-[ 13] 0x00007f3775947873   /usr/local/MATLAB/R2013a/bin/glnxa64/libmwuix.so+00534643
-[ 14] 0x00007f37824985e1 /usr/local/MATLAB/R2013a/bin/glnxa64/libmwservices.so+01848801 _Z25svWS_ProcessPendingEventsiib+00001825
-[ 15] 0x00007f3781dad5ef   /usr/local/MATLAB/R2013a/bin/glnxa64/libmwmcr.so+00316911
-[ 16] 0x00007f3781dadf5c   /usr/local/MATLAB/R2013a/bin/glnxa64/libmwmcr.so+00319324
-[ 17] 0x00007f3781da7592   /usr/local/MATLAB/R2013a/bin/glnxa64/libmwmcr.so+00292242
-[ 18] 0x00007f377ff30182              /lib/x86_64-linux-gnu/libpthread.so.0+00033154
-[ 19] 0x00007f377fc5d47d                    /lib/x86_64-linux-gnu/libc.so.6+01025149 clone+00000109
-
-
-Abnormal termination
-If this problem is reproducible, please submit a Service Request via:
-    http://www.mathworks.com/support/contact_us/
-
-A technical support engineer might contact you with further information.
-
-Thank you for your help.** This crash report has been saved to disk as /home/rohit21122012/matlab_crash_dump.3040-2 **
-
-
-
-MATLAB is exiting because of fatal error
+>> Row :2
+Row :3
+Row :4
+Row :5
+Row :6
+Row :7
+Row :8
+Row :9
+Row :10
+Row :11
+Row :12
+Row :13
+Row :14
+Row :15
+Row :16
+Row :17
+Row :18
+Row :19
+Row :20
+Row :21
+Row :22
+Row :23
+Row :24
+Row :25
+Row :26
+Row :27
+Row :28
+Row :29
+Row :30
+Row :31
+Row :32
+Row :33
+Row :34
+Row :35
+Row :36
+Row :37
+Row :38
+Row :39
+Row :40
+Row :41
+Row :42
+Row :43
+Row :44
+Row :45
+Row :46
+Row :47
+Row :48
+Row :49
+Row :50
+Row :51
+Row :52
+Row :53
+Row :54
+Row :55
+Row :56
+Row :57
+Row :58
+Row :59
+Row :60
+Row :61
+Row :62
+Row :63
+Row :64
+Row :65
+Row :66
+Row :67
+Row :68
+Row :69
+Row :70
+Row :71
+Row :72
+Row :73
+Row :74
+Row :75
+Row :76
+Row :77
+Row :78
+Row :79
+Row :80
+Row :81
+Row :82
+Row :83
+Row :84
+Row :85
+Row :86
+Row :87
+Row :88
+Row :89
+Row :90
+Row :91
+Row :92
+Row :93
+Row :94
+Row :95
+Row :96
+Row :97
+Row :98
+Row :99
+Row :100
+Row :101
+Row :102
+Row :103
+Row :104
+Row :105
+Row :106
+Row :107
+Row :108
+Row :109
+Row :110
+Row :111
+Row :112
+Row :113
+Row :114
+Row :115
+Row :116
+Row :117
+Row :118
+Row :119
+Row :120
+Row :121
+Row :122
+Row :123
+Row :124
+Row :125
+Row :126
+Row :127
+Row :128
+Row :129
+Row :130
+Row :131
+Row :132
+Row :133
+Row :134
+Row :135
+Row :136
+Row :137
+Row :138
+Row :139
+Row :140
+Row :141
+Row :142
+Row :143
+Row :144
+Row :145
+Row :146
+Row :147
+Row :148
+Row :149
+Row :150
+Row :151
+Row :152
+Row :153
+Row :154
+Row :155
+Row :156
+Row :157
+Row :158
+Row :159
+Row :160
+Row :161
+Row :162
+Row :163
+Row :164
+Row :165
+Row :166
+Row :167
+Row :168
+Row :169
+Row :170
+Row :171
+Row :172
+Row :173
+Row :174
+Row :175
+Row :176
+Row :177
+Row :178
+Row :179
+Row :180
+Row :181
+Row :182
+Row :183
+Row :184
+Row :185
+Row :186
+Row :187
+Row :188
+Row :189
+Row :190
+Row :191
+Row :192
+Row :193
+Row :194
+Row :195
+Row :196
+Row :197
+Row :198
+Row :199
+Row :200
+Row :201
+Row :202
+Row :203
+Row :204
+Row :205
+Row :206
+Row :207
+Row :208
+Row :209
+Row :210
+Row :211
+Row :212
+Row :213
+Row :214
+Row :215
+Row :216
+Row :217
+Row :218
+Row :219
+Row :220
+Row :221
+Row :222
+Row :223
+Row :224
+Row :225
+Row :226
+Row :227
+Row :228
+Row :229
+Row :230
+Row :231
+Row :232
+Row :233
+Row :234
+Row :235
+Row :236
+Row :237
+Row :238
+Row :239
+Row :240
+Row :241
+Row :242
+Row :243
+Row :244
+Row :245
+Row :246
+Row :247
+Row :248
+Row :249
+Row :250
+Row :251
+Row :252
+Row :253
+Row :254
+Row :255
+Row :256
+Row :257
+Row :258
+Row :259
+Row :260
+Row :261
+Row :262
+Row :263
+Row :264
+Row :265
+Row :266
+Row :267
+Row :268
+Row :269
+Row :270
+Row :271
+Row :272
+Row :273
+Row :274
+Row :275
+Row :276
+Row :277
+Row :278
+Row :279
+Row :280
+Row :281
+Row :282
+Row :283
+Row :284
+Row :285
+Row :286
+Row :287
+Row :288
+Row :289
+>> 
