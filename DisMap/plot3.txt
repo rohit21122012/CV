@@ -8,4 +8,10 @@
 To get started, type one of these: helpwin, helpdesk, or demo.
 For product information, visit www.mathworks.com.
  
->> >> 
+>> {Error using load
+Unable to read file 'pair3dm_win_2_ss_20': no such file or directory.
+
+Error in PlotDM (line 18)
+ 	load([folder_path, 'dm_win_2_ss_20']);
+} 
+>> 
