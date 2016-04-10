@@ -29,14 +29,15 @@ function DisparityMap(folder_path, left, right, w, ss)
 	disparity_map_cc = zeros(size(gray_left,1), size(gray_left,2));
 	
 	% window for the pixel
-	w = 1;	
 
 	img_size = size(gray_left);
 	new_left = zeros(2*w+img_size(1), 2*w+img_size(2));
 	new_right = zeros(2*w+img_size(1), 2*w+img_size(2));
 	new_left(w+1:end-w,w+1:end-w) = gray_left;
 	new_right(w+1:end-w,w+1:end-w) = gray_right;
-
+	
+%	new_left = gpuArray(new_left);
+%	new_right = gpuArray(new_right);
 
 	%Outer loop iterates over the row of right image
 	for i=w+1:w+img_size(1)
@@ -57,13 +58,13 @@ function DisparityMap(folder_path, left, right, w, ss)
 				right_win = new_right(i-w:i+w,jr-w:jr+w);
 				
 				%absolute criteria
-				cost(jr-j+1)  = sum(sum(abs(left_win - right_win)));
+				cost(jr-j+1)  = sumabs(left_win-right_win);%sum(sum(abs(left_win - right_win)));
 			
 				%square criteria
-				cost_sq(jr-j+1)  = sum(sum((left_win - right_win).^2));
+				cost_sq(jr-j+1)  = sumsqr(left_win-right_win);%sum(sum((left_win - right_win).^2));
 
 				%normalized cross-correlation criteria
-				cost_cc(jr-j+1)  = sum(sum(corr(left_win,right_win)));
+				cost_cc(jr-j+1)  = corr2(left_win,right_win);
 			end	
 
 			[min_cost, min_cost_idx] = min(cost);
